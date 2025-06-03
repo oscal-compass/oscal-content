@@ -1,0 +1,138 @@
+{
+    "component-definition": {
+        "uuid": "3a0c1cd5-fb09-4a19-9061-b1b9231582eb",
+        "metadata": {
+            "title": "Component definition for PCI V4",
+            "last-modified": "2025-04-14T20:32:06+00:00",
+            "version": "1.0",
+            "oscal-version": "1.1.3",
+            "links": [
+                {
+                    "href": "mapping-collections/PCI_v4-to-Harmonized_V1.1/mapping-collection.json",
+                    "media-type": "application/oscal+json",
+                    "text": "Mapping from PCI V4 to Harmonized Profile V1.1"
+                },
+                {
+                    "href": "component-definitions/Harmonized-CD_V1.1/component-definition.json",
+                    "media-type": "application/oscal+json",
+                    "text": "Component definition for Harmonized Profile V1.1"
+                }
+            ]
+        },
+        "components": [
+            {
+                "uuid": "b2e11579-d4d6-48f8-a43c-ec7157543648",
+                "type": "software",
+                "title": "XYZ",
+                "description": "XYZ",
+                "props": [
+                    {
+                        "name": "Rule_Id",
+                        "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                        "value": "rule-1",
+                        "remarks": "rule_set_00"
+                    },
+                    {
+                        "name": "Rule_Description",
+                        "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                        "value": "rule 1",
+                        "remarks": "rule_set_00"
+                    },
+                    {
+                        "name": "Rule_Id",
+                        "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                        "value": "rule-3",
+                        "remarks": "rule_set_02"
+                    },
+                    {
+                        "name": "Rule_Description",
+                        "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                        "value": "rule 3",
+                        "remarks": "rule_set_02"
+                    },
+                    {
+                        "name": "Rule_Id",
+                        "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                        "value": "rule-5",
+                        "remarks": "rule_set_04"
+                    },
+                    {
+                        "name": "Rule_Description",
+                        "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                        "value": "rule 5",
+                        "remarks": "rule_set_04"
+                    },
+                    {
+                        "name": "Rule_Id",
+                        "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                        "value": "rule-6",
+                        "remarks": "rule_set_05"
+                    },
+                    {
+                        "name": "Rule_Description",
+                        "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                        "value": "rule 6",
+                        "remarks": "rule_set_05"
+                    }
+                ],
+                "control-implementations": [
+                    {
+                        "uuid": "4de88500-ac9d-4cc3-a7ff-c3b25d501db8",
+                        "source": "catalogs/PCI/catalog.json",
+                        "description": "",
+                        "implemented-requirements": [
+                            {
+                                "uuid": "fd7cbc99-954e-4958-8742-e822dd34d5e3",
+                                "control-id": "PCI-8.3.1",
+                                "description": "",
+                                "props": [
+                                    {
+                                        "name": "Rule_Id",
+                                        "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                                        "value": "rule-1"
+                                    }
+                                ]
+                            },
+                            {
+                                "uuid": "fd7cbc99-954e-4958-8742-e822dd34d5e3",
+                                "control-id": "PCI-8.3.2",
+                                "description": "",
+                                "props": [
+                                    {
+                                        "name": "Rule_Id",
+                                        "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                                        "value": "rule-3"
+                                    }
+                                ]
+                            },
+                            {
+                                "uuid": "fd7cbc99-954e-4958-8742-e822dd34d5e3",
+                                "control-id": "PCI-8.4.1",
+                                "description": "",
+                                "props": [
+                                    {
+                                        "name": "Rule_Id",
+                                        "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                                        "value": "rule-5"
+                                    }
+                                ]
+                            },
+                            {
+                                "uuid": "fd7cbc99-954e-4958-8742-e822dd34d5e3",
+                                "control-id": "PCI-8.5.1",
+                                "description": "",
+                                "props": [
+                                    {
+                                        "name": "Rule_Id",
+                                        "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                                        "value": "rule-6"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
