@@ -1,0 +1,85 @@
+{
+    "mapping-collection": {
+      "uuid": "a0000000-0000-4000-8000-000000000050",
+      "metadata": {
+        "title": "Mapping from NIST 800-53 rev4 to Harmonized Profile V1.0",
+        "last-modified": "2025-04-14T00:00:00.000+00:00",
+        "version": "1.0.0",
+        "oscal-version": "1.1.2"
+      },
+      "provenance": {
+        "method": {
+          "value": "semi-automated",
+          "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal/mapping"
+        },
+        "matching-rationale": "semantic",
+        "status": "draft",
+        "confidence-score": {
+          "score": "0.90",
+          "description": "confident about this mapping"
+        },
+        "mapping-description": "This contains semantic mappings from NIST 800-53 v4 to Harmonized Profile V1.0."
+      },
+      "mappings": [
+        {
+          "uuid":"a0000000-0000-4000-8000-000000000060",
+          "source-resource": {
+            "type": "catalog",
+            "href": "catalogs/NIST_SP-800-53_rev4/catalog.json"
+          },
+          "target-resource": {
+            "type": "profile",
+            "href": "profiles/Harmonized_v1.0/profile.json"
+          },
+          "maps": [
+            {
+              "uuid":"a0000000-0000-4000-8000-000000000070",
+              "matching-rationale": "functional",
+              "confidence-score": {
+                "score": "0.95",
+                "description": "very confident about this mapping"
+              },
+              "relationship": {
+                "type": "equal-to"
+              },
+              "sources": [
+                {
+                  "type": "control",
+                  "id_ref": "ac-1"
+                }
+              ],
+              "targets": [
+                {
+                  "type": "control",
+                  "id_ref": "ac-1"
+                }
+              ]
+            },
+            {
+              "uuid":"a0000000-0000-4000-8000-000000000080",
+              "confidence-score": {
+                "score": "0.99",
+                "description": "very confident about this mapping"
+              },
+              "relationship": {
+                "type": "equal-to"
+              },
+              "sources": [
+                {
+                  "type": "control",
+                  "id_ref": "ac-2"
+                }
+              ],
+              "targets": [
+                {
+                  "type": "control",
+                  "id_ref": "ac-2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
