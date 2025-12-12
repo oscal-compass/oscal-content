@@ -15,7 +15,7 @@
         "percentage": "0.90"
       },
       "covergae": "0.7",
-      "mapping-description": "This contains semantic mappings from PCI v4 to NIST 800-53 rev4"
+      "mapping-description": "This contains semantic mappings from NIST CSF v2 to NIST 800-53 rev5"
     },
     "mappings": [
       {
