@@ -1,0 +1,105 @@
+{
+  "mapping-collection": {
+    "uuid": "a0000000-0000-4000-8000-000000000500",
+    "metadata": {
+      "title": "Mapping from NIST CSF v2.0 to NIST 800-53 rev5",
+      "last-modified": "2025-12-12T00:00:00.000+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.3"
+    },
+    "provenance": {
+      "method": "human",
+      "matching-rationale": "semantic",
+      "status": "draft",
+      "confidence-score": {
+        "percentage": "0.90"
+      },
+      "covergae": "0.7",
+      "mapping-description": "This contains semantic mappings from PCI v4 to NIST 800-53 rev4"
+    },
+    "mappings": [
+      {
+        "uuid": "a0000000-0000-4000-8000-000000011060",
+        "source-resource": {
+          "type": "catalog",
+          "href": "https://raw.githubusercontent.com/usnistgov/oscal-content/refs/heads/main/nist.gov/CSF/v2.0/json/NIST_CSF_v2.0_catalog.json"
+        },
+        "target-resource": {
+          "type": "catalog",
+          "href": "https://raw.githubusercontent.com/usnistgov/oscal-content/refs/heads/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json"
+        },
+        "maps": [
+          {
+            "uuid": "a0000000-0000-4000-8000-000000000070",
+            "matching-rationale": "functional",
+            "confidence-score": {
+              "percentage": "0.95"
+            },
+            "covergae": "1.0",
+            "relationship": {
+              "type": "subset-of"
+            },
+            "sources": [
+              {
+                "type": "control",
+                "id_ref": "ID.AM-01"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id_ref": "cm-8"
+              },
+              {
+                "type": "control",
+                "id_ref": "pm-5"
+              }
+            ]
+          },
+          {
+            "uuid": "a0000000-0000-4000-8000-000000000070",
+            "matching-rationale": "functional",
+            "confidence-score": {
+              "percentage": "0.98"
+            },
+            "covergae": "1.0",
+            "relationship": {
+              "type": "equivalent-to"
+            },
+            "sources": [
+              {
+                "type": "control",
+                "id_ref": "ID.AM-05"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id_ref": "ra-2"
+              },
+              {
+                "type": "control",
+                "id_ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id_ref": "ra-9"
+              }
+            ]
+          }
+        ],
+        "target-gap-summary": {
+          "uuid": "a0000000-0000-4000-8000-000000000020",
+          "unmapped-controls": [
+            {
+              "with-ids": [
+                "ac-2.1",
+                "ac-2.2"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
