@@ -14,7 +14,7 @@
       "confidence-score": {
         "percentage": "0.90"
       },
-      "covergae": "0.7",
+      "coverage": "0.7",
       "mapping-description": "This contains semantic mappings from PCI v4 to NIST 800-53 rev4"
     },
     "mappings": [
@@ -35,7 +35,7 @@
             "confidence-score": {
               "percentage": "0.95"
             },
-            "covergae": "1.0",
+            "coverage": "1.0",
             "relationship": {
               "type": "subset-of"
             },
@@ -58,7 +58,7 @@
             "confidence-score": {
               "percentage": "0.98"
             },
-            "covergae": "1.0",
+            "coverage": "1.0",
             "relationship": {
               "type": "equal-to"
             },
