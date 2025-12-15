@@ -14,7 +14,7 @@
       "confidence-score": {
         "percentage": "0.90"
       },
-      "covergae": "0.7",
+      "coverage": "0.7",
       "mapping-description": "This contains semantic mappings from NIST CSF v2 to NIST 800-53 rev5"
     },
     "mappings": [
@@ -35,7 +35,7 @@
             "confidence-score": {
               "percentage": "0.95"
             },
-            "covergae": "1.0",
+            "coverage": "0.95",
             "relationship": {
               "type": "subset-of"
             },
@@ -58,11 +58,11 @@
           },
           {
             "uuid": "a0000000-0000-4000-8000-000000000070",
-            "matching-rationale": "functional",
+            "matching-rationale": "semantic",
             "confidence-score": {
               "percentage": "0.98"
             },
-            "covergae": "1.0",
+            "coverage": "1.0",
             "relationship": {
               "type": "equivalent-to"
             },
