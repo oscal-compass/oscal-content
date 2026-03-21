@@ -3,18 +3,17 @@
     "uuid": "a0000000-0000-4000-8000-000000000050",
     "metadata": {
       "title": "Mapping from PCI v4 to NIST 800-53 rev4",
-      "last-modified": "2025-05-14T00:00:00.000+00:00",
+      "last-modified": "2026-03-09T00:00:00.000+00:00",
       "version": "1.0.0",
-      "oscal-version": "1.1.3"
+      "oscal-version": "1.2.0"
     },
     "provenance": {
-      "method": "hybrid",
+      "method": "manual",
       "matching-rationale": "semantic",
       "status": "draft",
       "confidence-score": {
-        "percentage": "0.90"
+        "percentage": 0.90
       },
-      "coverage": "0.7",
       "mapping-description": "This contains semantic mappings from PCI v4 to NIST 800-53 rev4"
     },
     "mappings": [
@@ -32,13 +31,7 @@
           {
             "uuid": "a0000000-0000-4000-8000-000000000070",
             "matching-rationale": "functional",
-            "confidence-score": {
-              "percentage": "0.95"
-            },
-            "coverage": "1.0",
-            "relationship": {
-              "type": "subset-of"
-            },
+            "relationship": "subset-of",
             "sources": [
               {
                 "type": "control",
@@ -50,18 +43,18 @@
                 "type": "control",
                 "id_ref": "ac-1"
               }
-            ]
+            ],
+            "confidence-score": {
+              "percentage": "0.95"
+            },
+            "coverage": {
+              "target-coverage": 0.7
+            }
           },
           {
             "uuid": "a0000000-0000-4000-8000-000000000070",
             "matching-rationale": "functional",
-            "confidence-score": {
-              "percentage": "0.98"
-            },
-            "coverage": "1.0",
-            "relationship": {
-              "type": "equal-to"
-            },
+            "relationship": "equal-to",
             "sources": [
               {
                 "type": "control",
@@ -73,7 +66,13 @@
                 "type": "control",
                 "id_ref": "ac-2"
               }
-            ]
+            ],
+            "confidence-score": {
+              "percentage": "0.98"
+            },
+            "coverage": {
+              "target-coverage": 1.0
+            }
           }
         ],
         "source-gap-summary": {
